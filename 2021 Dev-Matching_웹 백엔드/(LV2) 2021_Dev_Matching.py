@@ -49,6 +49,3 @@ def solution(rows, columns, queries):
 
 print(solution(6,6,[[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
 #print(solution(100,97,[[1,1,100,97]]))
-
-#https://ssinee.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%96%89%EB%A0%AC-%ED%85%8C%EB%91%90%EB%A6%AC-%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0-python3-level2
-#정리해서 노트에 써놓기
