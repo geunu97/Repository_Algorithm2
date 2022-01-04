@@ -21,7 +21,6 @@ print(solution('baabaa'))
 
 
 #Point
-
 #stack 문제
 #같은거2개 찾을 때마다 제거해주고 다시 첫 번째 원소로 돌아가서 탐색하면 시간초과!!!
 
