@@ -1,3 +1,6 @@
+#LV2 배달
+#한 정점에서 모든 정점까지의 거리 중에서 K시간 이내로 도착할 수 있는 정점 찾기
+
 import heapq
 
 def solution(N, road, K):
@@ -32,5 +35,4 @@ def solution(N, road, K):
 
 
 #Point
-#한 정점에서 모든 정점까지의 거리 중에서 K시간 이내로 도착할 수 있는 정점 찾기
 #다익스트라 문제
