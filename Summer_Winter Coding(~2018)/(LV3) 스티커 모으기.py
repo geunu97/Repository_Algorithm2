@@ -1,4 +1,6 @@
 #LV3 스티커 모으기
+#원형으로 연결된 스티커에서 몇 장의 스티커를 뜯어내어 뜯어낸 스티커에 적힌 숫자의 합이 최대가 되게 하기
+#스티커 한장을 뜯어내면 양쪽으로 인접해 있는 스티커는 찢어져서 사용할 수 없다
 
 def solution(sticker):
     dp=[0] * (len(sticker))
@@ -8,14 +10,13 @@ def solution(sticker):
     
     if len(sticker) >= 2:
         dp[1] = max(sticker[0], sticker[1])
-        
         dp2[1] = sticker[1] 
     
     if len(sticker) >= 3:
         for i in range(2,len(sticker)):
             if i == 2:
-                dp2[2] = max(sticker[1], sticker[2])
                 dp[i] = max(dp[i-1],dp[i-2]+sticker[i])
+                dp2[2] = max(sticker[1], sticker[2])
             
             if i == len(sticker)-1:
                 a = max(dp[i-1],dp[i-2])
@@ -29,10 +30,10 @@ def solution(sticker):
 
     return dp[-1]
 
+print(solution([14, 6, 5, 11, 3, 9, 2, 10]))
 
 #Point
-#dp문제 & 마지막원소 처리? - 원형모양
-#왜 맞았지???
+#dp문제 & 마지막원소 처리 
 
 
 #기본 점화식
@@ -45,6 +46,3 @@ def solution(sticker):
 #2번은 첫번째 원소(스티커)를 없다고 생각하고 두번쨰 원소부터 마지막 원소까지 점화식을 진행하면 된다
 
 #1번과 2번중 최댓값이 정답이 된다. 
-
-
-#소스만 더 깔끔히 정리하기!!!
