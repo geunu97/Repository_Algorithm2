@@ -6,7 +6,7 @@ def solution(fees, records):
     dictionary = {}
     
     for i in records:
-        i = i.split(' ')
+        i = i.split(' ')  #문자열문제에서 많이 나오는 입력형태, split사용해서 공백으로 구분해주기!!!!!
         
         #한번도 들어온적이 없는 차량
         if i[1] not in dictionary:
